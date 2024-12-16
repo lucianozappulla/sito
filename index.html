@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano Zappulla - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .skill {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: white;
+        }
+        .animate {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border: 8px solid #007BFF;
+            border-radius: 15px;
+            max-width: 200px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+                margin: 0 10px;
+            }
+            section {
+                padding: 30px 15px;
+                margin: 10px;
+            }
+            .profile-image {
+                max-width: 150px;
+                border-width: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luciano Zappulla</h1>
+        <p>Studente magistrale in Sicurezza Informatica</p>
+    </header>
+    <nav>
+        <a href="#about">Chi Sono</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Competenze</a>
+        <a href="#education">Formazione</a>
+        <a href="#contact">Contatti</a>
+    </nav>
+    <section id="about" class="animate">
+        <h2>Chi Sono</h2>
+        <img src="835E5156-25D8-4C52-90BB-3436E6AA1F99.jpg" alt="Luciano Zappulla" class="profile-image">
+        <p>Sono uno studente magistrale di Sicurezza Informatica, desideroso di ampliare le mie competenze e contribuire con passione al mondo dell'informatica.</p>
+    </section>
+    <section id="portfolio" class="animate">
+        <h2>Portfolio</h2>
+        <p>Progetti completati:</p>
+        <ul>
+            
+        </ul>
+    </section>
+    <section id="skills" class="animate">
+        <h2>Competenze</h2>
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Sicurezza Informatica</span>
+            <span class="skill">DBMS</span>
+            <span class="skill">C</span>
+            <span class="skill">C++</span>
+            <span class="skill">PHP</span>
+        </div>
+    </section>
+    <section id="education" class="animate">
+        <h2>Formazione</h2>
+        <ul>
+            <li><strong>Laurea Magistrale in Informatica</strong> - Università degli Studi di Catania (2024 - 2026, in corso)</li>
+            <li><strong>Laurea Triennale in Scienze e Tecnologie Informatiche</strong> - Università degli Studi di Catania (2019 - 2024, voto: 92/110)</li>
+            <li><strong>Maturità Scientifica</strong> - 2019</li>
+        </ul>
+        <h3>Certificazioni</h3>
+        <ul>
+            <li>Programming for Everybody (Python) - Coursera (2020)</li>
+            <li>Introduction to HTML5 - Coursera (2020)</li>
+            <li>Technical Support Fundamentals - Coursera (2021)</li>
+            <li>System Administration and IT Infrastructure Services - Coursera (2023)</li>
+	    <li>Security Soft Stars - ONstairs (01/01/2022)</li>
+            <li>Network Security Fundamentals - Palo Alto Networks (01/06/2024)</li>
+        </ul>
+        </ul>
+    </section>
+    <section id="contact" class="animate">
+        <h2>Contatti</h2>
+        <p>Email: <a href="mailto:lucianozappulla2000@gmail.com">lucianozappulla2000@gmail.com</a></p>
+        <p>Telefono: +39 3934481505</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Luciano Zappulla. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
